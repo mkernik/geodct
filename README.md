@@ -1,6 +1,6 @@
 # Geospatial Data Curation Toolkit
 
-One Paragraph of project description goes here
+This repository contains a collection of python scripts and ArcGIS tools intended to assist preparing spatial data for archiving or sharing.
 
 ## Features
 
@@ -15,7 +15,7 @@ One Paragraph of project description goes here
 * Python 3
 
 **For tools dealing with shapefiles:**
-* Python 3 with the additional python library [gdal] (https://gdal.org/)
+* Python 3 with the additional python library [gdal](https://gdal.org/)
 
 **For tools dealing with geodatabases:**
 * ArcGIS Pro (tools built with 2.9)
@@ -31,5 +31,5 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 ## Acknowledgements
 
 * [University of Minnesota Libraries](https://www.lib.umn.edu/)
-* [The Data Curation Network] (https://datacurationnetwork.org/)
+* [The Data Curation Network](https://datacurationnetwork.org/)
 * the Geo4Lib community
