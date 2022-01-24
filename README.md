@@ -2,47 +2,27 @@
 
 One Paragraph of project description goes here
 
-## Getting Started
+## Features
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+* Batch unzip folders (i.e extract zipped shapefiles)
+* Create an inventory of files/fields in shapefiles / geodatabases for readme .txt files
+* Check whether the shapefiles in a directory have the same projection and file extensions
+* Check whether the layers in a geodatabase have functionality that would be lost or altered if converted into shapefiles
 
-### Prerequisites
+## Requirements
 
-What things you need to install the software and how to install them
+**For general curation tools:**
+* Python 3
 
-```
-Give examples
-```
+**For tools dealing with shapefiles:**
+* Python 3 with the additional python library [gdal] (https://gdal.org/)
 
-### Installing
-
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
- 
+**For tools dealing with geodatabases:**
+* ArcGIS Pro (tools built with 2.9)
 
 ## Author
 
-**Melinda Kernik** - [PurpleBooth](https://github.com/PurpleBooth)
-
+Melinda Kernik - [University of Minnesota Map Library](https://www.lib.umn.edu/about/staff/melinda-kernik)
 
 ## License
 
@@ -50,6 +30,6 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgements
 
-* University of Minnesota Libraries
-* Geo4Lib community (conversations inspired the work)
-* The Data Curation Network
+* [University of Minnesota Libraries](https://www.lib.umn.edu/)
+* [The Data Curation Network] (https://datacurationnetwork.org/)
+* the Geo4Lib community
