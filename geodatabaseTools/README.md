@@ -1,6 +1,6 @@
 # Geodatabase Data Curation ArcGIS Toolbox
 
-This repository contains a collection of python scripts and ArcGIS tools intended to assist preparing geodatabases for archiving or sharing.
+This ArcGIS custom toolbox contains tools intended to help prepare geodatabases for archiving or sharing.
 
 ### How to use
 * Download or clone this repository folder to your computer
@@ -12,6 +12,7 @@ This repository contains a collection of python scripts and ArcGIS tools intende
 ### Description:
 This ArcGIS script tool examines feature classes in input file geodatabases for characteristics and data that would be lost or altered if it were transformed into a shapefile. Checks include:
 
+* large files (feature classes with more than 255 fields or over 2GB) 
 * field names longer than 10 characters  
 * string fields longer than 254 characters  
 * date fields with time values  
@@ -26,8 +27,9 @@ The tool can process multiple file geodatabases at once. (The script parameter â
 
 ### Known limitations:
 There are some additional issues when converting from geodatabase to shapefile that this script does not currently check for, including:
-*geometric networks
-*coordinate ID field types
+* geometric networks
+* coordinate ID field types
+
 See this resource for [a complete list of differences in functionality](https://desktop.arcgis.com/en/arcmap/latest/manage-data/shapefiles/geoprocessing-considerations-for-shapefile-output.htm).
 
 ## Requirements
