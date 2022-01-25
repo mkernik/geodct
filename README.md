@@ -4,9 +4,15 @@ This repository contains a collection of python scripts and ArcGIS tools intende
 
 ## Features
 
-* Batch unzip folders (i.e extract zipped shapefiles)
-* Create an inventory of files/fields in shapefiles / geodatabases for readme .txt files
+[generalTools](https://github.com/mkernik/geodct/edit/main/generalTools)
+* Batch unzip folders (i.e. extract zipped shapefiles)
+
+[shapefileTools](https://github.com/mkernik/geodct/edit/main/shapefileTools)
+* Create an inventory of files/fields in shapefiles for readme .txt files
 * Check whether the shapefiles in a directory have the same projection and file extensions
+
+[geodatabasefileTools](https://github.com/mkernik/geodct/edit/main/geodatabaseTools)
+* Create an inventory of data layers/fields in geodatabases for readme .txt files
 * Check whether the layers in a geodatabase have functionality that would be lost or altered if converted into shapefiles
 
 ## Requirements
