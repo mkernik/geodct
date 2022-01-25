@@ -1,0 +1,184 @@
+Input folder: C:\Users\kerni016\Desktop\ProfessionalDevelopmentLeave\Shapefiles
+Date: 2022-01-25T17:36:22
+
+File List
+	1. Filename: Black_Sea_Deposition_Type (Point) (.cpg .dbf .prj .sbn .sbx .shp .shx .xml )
+	Short description:
+
+	2. Filename: EmptyShp (Polygon) (.cpg .dbf .prj .sbn .sbx .shp .shx .xml )
+	Short description:
+
+	3. Filename: Mixed-Vessel_Counts (Point) (.cpg .dbf .sbn .sbx .shp .shx .xml )
+	Short description:
+
+	4. Filename: Plots_P1 (Polygon) (.cpg .dbf .prj .sbn .sbx .shp .shx .xml )
+	Short description:
+
+	5. Filename: Sites (Point) (.cpg .dbf .prj .sbn .sbx .shp .shx .xml )
+	Short description:
+
+	6. Filename: Type_of_Figured_Ware (Point) (.cpg .dbf .prj .sbn .sbx .shp .shx .xml )
+	Short description:
+
+	7. Filename: Usage_Groups (Point) (.cpg .dbf .prj .sbn .sbx .shp .shx .xml )
+	Short description:
+
+	8. Filename: Western_European_Deposition_Types (Point) (.cpg .dbf .prj .sbn .sbx .shp .shx )
+	Short description:
+
+-----------------------------------------
+DATA-SPECIFIC INFORMATION FOR: Black_Sea_Deposition_Type
+-----------------------------------------
+A. Number of features:  33
+B. Number of fields: 5
+C. Field list
+	1. Name: Site (String)
+	Description:
+
+	2. Name: Latitude (Real)
+	Description:
+
+	3. Name: Longitude (Real)
+	Description:
+
+	4. Name: Deposition (String)
+	Description:
+
+	5. Name: Vessel_Cou (Integer64)
+	Description:
+
+-----------------------------------------
+DATA-SPECIFIC INFORMATION FOR: EmptyShp
+-----------------------------------------
+A. Number of features:  0
+B. Number of fields: 0
+C. Field list
+-----------------------------------------
+DATA-SPECIFIC INFORMATION FOR: Mixed-Vessel_Counts
+-----------------------------------------
+A. Number of features:  12
+B. Number of fields: 5
+C. Field list
+	1. Name: Site (String)
+	Description:
+
+	2. Name: Latitude (Real)
+	Description:
+
+	3. Name: Longitude (Real)
+	Description:
+
+	4. Name: Artifact_C (Integer64)
+	Description:
+
+	5. Name: Image (String)
+	Description:
+
+-----------------------------------------
+DATA-SPECIFIC INFORMATION FOR: Plots_P1
+-----------------------------------------
+A. Number of features:  72
+B. Number of fields: 1
+C. Field list
+	1. Name:  (Integer64)
+	Description:
+
+-----------------------------------------
+DATA-SPECIFIC INFORMATION FOR: Sites
+-----------------------------------------
+A. Number of features:  65
+B. Number of fields: 3
+C. Field list
+	1. Name: Site (String)
+	Description:
+
+	2. Name: Latitude (Real)
+	Description:
+
+	3. Name: Longitude (Real)
+	Description:
+
+-----------------------------------------
+DATA-SPECIFIC INFORMATION FOR: Type_of_Figured_Ware
+-----------------------------------------
+A. Number of features:  65
+B. Number of fields: 6
+C. Field list
+	1. Name: Site (String)
+	Description:
+
+	2. Name: Latitude (Real)
+	Description:
+
+	3. Name: Longitude (Real)
+	Description:
+
+	4. Name: Black_figu (Integer64)
+	Description:
+
+	5. Name: Red_figure (Integer64)
+	Description:
+
+	6. Name: Unknown (Integer64)
+	Description:
+
+-----------------------------------------
+DATA-SPECIFIC INFORMATION FOR: Usage_Groups
+-----------------------------------------
+A. Number of features:  65
+B. Number of fields: 11
+C. Field list
+	1. Name: Site (String)
+	Description:
+
+	2. Name: Latitude (Real)
+	Description:
+
+	3. Name: Longitude (Real)
+	Description:
+
+	4. Name: Drinking (Integer64)
+	Description:
+
+	5. Name: Mixing (Integer64)
+	Description:
+
+	6. Name: Perfume_Oi (Integer64)
+	Description:
+
+	7. Name: Storage (Integer64)
+	Description:
+
+	8. Name: Transport (Integer64)
+	Description:
+
+	9. Name: Pouring (Integer64)
+	Description:
+
+	10. Name: Other (Integer64)
+	Description:
+
+	11. Name: Unknown (Integer64)
+	Description:
+
+-----------------------------------------
+DATA-SPECIFIC INFORMATION FOR: Western_European_Deposition_Types
+-----------------------------------------
+A. Number of features:  25
+B. Number of fields: 5
+C. Field list
+	1. Name: Site (String)
+	Description:
+
+	2. Name: Latitude (Real)
+	Description:
+
+	3. Name: Longitude (Real)
+	Description:
+
+	4. Name: Deposition (String)
+	Description:
+
+	5. Name: Vessel_Cou (Integer64)
+	Description:
+

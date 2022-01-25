@@ -1,0 +1,42 @@
+Input folder: C:\Users\kerni016\Desktop\ProfessionalDevelopmentLeave\ProjectShapefiles
+Date: 2022-01-25T15:53:01
+
+This folder has 8 valid shapefiles.
+
+The following shapefile(s) are missing required files and cannot be opened:
+Greek_Sites-Vessel_Counts (.shx)
+
+The following shapefile(s) have the required files, but cannot be opened and may be corrupt:
+Non-Pottery_Sites
+
+------
+File Extensions
+------
+
+The shapefiles in this folder do not have the same component files.
+
+The most common set of files is: .cpg, .dbf, .prj, .sbn, .sbx, .shp, .shx, .xml
+All required and recommended files are present.
+6 shapefile(s) with this set.
+
+1 shapefile(s) with 1 missing file(s): .prj
+Mixed-Vessel_Counts
+
+1 shapefile(s) with 1 missing file(s): .xml
+Western_European_Deposition_Types
+
+------
+Projections
+------
+
+The shapefiles in this folder are not in the same coordinate system/projection.
+
+The most common coordinate system/projection is: WGS 84 / Pseudo-Mercator -- EPSG: 3857
+4 shapefile(s) have this spatial reference.
+
+1 shapefile(s) have the coordinate system/projection: Canada_Lambert_Conformal_Conic -- ESRI: 102002
+Plots_P1
+
+The spatial reference is not defined for the following shapefiles:
+Mixed-Vessel_Counts
+
