@@ -11,27 +11,33 @@ This python script / tool batch extracts the .zip files in a directory and its s
 
 ### Using the graphical user interface
 
-* Find the file UnzipTkinter.py and double click on it
+* Find your downloaded UnzipTkinter.py file and double click on it
 * The script should open a dialog box that you can use to select a folder of zipped files.
+
 (image of the tool)
 
 * If the dialog box does not appear:
     * open the command prompt and change the working directory to the script location
     * open python and call the script.
-      **Windows example**: py UnzipTkinter.py
-      **Mac example**: python UnzipTkinter.py
+      
+      **Windows example:** py UnzipTkinter.py
+      
+      **Mac example:** python UnzipTkinter.py
 
 
 ### From the command line
 * Copy the UnzipCommandLine.py script into the folder with zipped files (Or provide an absolute path to the folder when typing in the command)
 
-* Open the Command Prompt (windows) or terminal (mac).
+* Open the Command Prompt (windows) or Terminal (mac).
 * Change the working directory to the location of the script
-**Example:** cd path/of/script
+
+  **Example:** cd path/of/script
 
 * Open Python, call the script, and provide the path of the folder with the zipped files
-**Windows example:** py UnzipCommandLine.py directory/
-**Mac example:**:python UnzipCommandLine.py directory
+
+  **Windows example:** py UnzipCommandLine.py directory/
+
+  **Mac example:** python UnzipCommandLine.py directory
 
 ## License
 
