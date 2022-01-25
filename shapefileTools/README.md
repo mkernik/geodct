@@ -1,12 +1,12 @@
-# Shapefile Inventory python script
+# Shapefile inventory script
 
-This script creates an inventory of files and field names for shapefiles in a directory, including:
+This python script creates an inventory of shapefiles in a directory, including:
 * a list of shapefiles in the directory (ordered alphabetically)
 * a list of field names / field types for each shapefile
 
 The lists are written to a text file ("shapefile_fileList.txt") in the directory being examined by the script. The format is based on a [readme template used by the Data Repository for the University of Minnesota](z.umn.edu/readme) (originally developed at [Cornell University](https://data.research.cornell.edu/content/readme))
 
-The script also writes a separate text file ("shapefile_report.txt"), which:  
+The script also produces a separate text file ("shapefile_report.txt"), which:  
 * checks file extensions to ensure that all required and recommended files are present
 * determines whether the shapefiles in the directory have the same spatial reference
 * flags shapefiles that are corrupt or cannot be opened
