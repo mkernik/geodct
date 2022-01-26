@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 Created on Mon Jan 10 10:31:46 2022
-script name:shapefileCheck.py
+script name:shapefileInventory.py
 input: <directory path>
 output: two text file reports "fileList_[directory_name].txt" and "report_[directory_name].txt"
 
