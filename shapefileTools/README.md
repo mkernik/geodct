@@ -1,4 +1,4 @@
-# shapefileCheck.py script
+# Shapefile inventory python script
 
 This python script creates an inventory of the shapefiles in a folder, including:
 * a list of shapefiles in the folder (ordered alphabetically)
@@ -29,7 +29,7 @@ The file list/inventory is written to a text file ("fileList_[directory_name].tx
   **Example:** cd path/of/script
 * Call the script and provide the path of the folder with the shapefiles
 
-  **Example:** python shapefileCheck.py C:\Desktop\Shapefiles
+  **Example:** python shapefileInventory.py C:\Desktop\Shapefiles
 
 If you don't want to use the OSGeo4W Shell, you can also download the gdal library to run from other instances of Python.  
 
