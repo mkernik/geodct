@@ -18,13 +18,13 @@ This repository contains a collection of python scripts and ArcGIS tools to help
 ## Requirements
 
 **For general curation tools:**
-* Python 3
+* Python 3 (tools built with version 3.7.11)
 
 **For tools dealing with shapefiles:**
 * Python 3 with the additional python library [gdal](https://gdal.org/)
 
 **For tools dealing with geodatabases:**
-* ArcGIS Pro (tools built with 2.9)
+* ArcGIS Pro (tools built with version 2.9.0)
 
 ## Author
 
