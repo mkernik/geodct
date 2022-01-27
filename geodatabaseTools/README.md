@@ -4,12 +4,16 @@ This ArcGIS custom toolbox contains tools intended to help prepare geodatabases 
 
 ### Requirements
 
-ArcGIS Pro (The tool was built using version 2.9.0)
+ArcGIS Pro (tools built using version 2.9.0)
 
 ### How to use
 * Download or clone this repository folder to your computer
 * Open ArcGIS Pro
 * Use the catalog view to connect to a folder containing the toolbox.
+* Double click on the tool you would like to use
+* Browse for and select your desired geodatabase(s)
+* Click on the "Run" button and check the "View Details" windows for error messages
+* When the script completes, check the folder with the geodatabase(s) for the reports
 
 ## GeodatabasetoShapefileWarnings ArcGIS tool script
 
