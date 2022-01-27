@@ -12,10 +12,7 @@ This python script / tool batch extracts the .zip files in a directory and its s
 ### Using the graphical user interface
 
 * Find your downloaded UnzipTkinter.py file and double click on it
-* The script should open a dialog box that you can use to select a folder of zipped files.
-
-(image of the tool)
-
+* The script should open a dialog box that you can use to select a folder of zipped files
 * If the dialog box does not appear:
     * open the command prompt and change the working directory to the script location
     * open python and call the script.
