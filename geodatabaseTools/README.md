@@ -31,9 +31,11 @@ This ArcGIS script tool examines feature classes in input file geodatabases for 
 
 The results of this inspection are written to a text file ("warning_report_[geodatabase_name]") in the directory where the geodatabase is located.  A section at the top provides a list of feature classes and information about the geodatabase as a whole.  Each valid feature class has a section in the following report with a summary of possible warnings and then details about any issues found.
 
-(sample report)
-
 The tool can process multiple file geodatabases at once. A separate text file report will be created for each geodatabase.
+
+**Sample report**
+
+[Warning report](https://github.com/mkernik/geodct/edit/main/sampleReports/warning_report_GeodatabaseToTransform.txt)
 
 ### Known limitations:
 There are some additional issues when converting from geodatabase to shapefile that this script does not currently check for, including:
@@ -53,11 +55,13 @@ This ArcGIS script tool takes inventory of data layers in a geodatabase.  It cre
 
 The results of this inspection are written to a text file ("fileList_[geodatabase_name].txt") in the directory where the geodatabase is located.  The format is based on a [readme template used by the Data Repository for the University of Minnesota](z.umn.edu/readme) (originally developed at [Cornell University](https://data.research.cornell.edu/content/readme)) 
 
-(sample report)
+The tool can process multiple file geodatabases at once. (The script parameter “geodatabase” is multivalued.)  A separate text file report will be created for each geodatabase.
 
-The tool can process multiple file geodatabases at once. (The script parameter “geodatabase” is multivalued.)  A separate text file report will be created for each geodatabase. 
+**Sample report**
+
+[File list](https://github.com/mkernik/geodct/edit/main/sampleReports/fileList_METRO_PARKS_TRAILS_v1_2.txt)
 
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under Creative Commons Attribution-NonCommercial [(CC BY-NC 4.0)](https://creativecommons.org/licenses/by-nc/4.0/) 
