@@ -32,7 +32,7 @@ Melinda Kernik - [University of Minnesota Map Library](https://www.lib.umn.edu/a
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under Creative Commons Attribution-NonCommercial [(CC BY-NC 4.0)](https://creativecommons.org/licenses/by-nc/4.0/) 
 
 ## Acknowledgements
 
