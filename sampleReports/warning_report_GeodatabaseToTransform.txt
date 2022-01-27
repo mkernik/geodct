@@ -1,0 +1,219 @@
+**********************************************
+
+The geodatabase includes the following feature classes:
+  dnr_public_facilities_polygons  
+  FeatureDatasetTest/MNDNR_FOR_SEEDZONES
+  FeatureDatasetTest/eda_surfacewater_stations
+  SubtypeTest
+  
+It also contains 2 other data layers, including: 
+  1 annotation layer(s) **WARNING: Functionality is lost when converting annotation layers into shapefiles**
+  1 raster(s)
+
+The file size of the geodatabase is 64.0 KB.
+
+ ********************************************** 
+
+
+-------------------------------
+Summary of warnings for dnr_public_facilities_polygons:
+-------------------------------
+  Number of fields: Ok
+  Field name character length: Warning
+  String field length: Ok
+  Date fields with time: Warning
+  NULL values: Warning
+  Unsupported field types: Warning
+  Attribute domains: Warning
+  Subtypes: Ok
+
+
+More detailed description of warnings:
+
+
+WARNING: Shapefile field names cannot be longer than 10 characters. Only the first 10 characters will be used for field names that exceed this length. 
+
+There are 21 field names that will be truncated:
+  facility_guid,   truncated field name: facility_g
+  description,   truncated field name: descriptio
+  digitizing_source_id,   truncated field name: digitizing
+  ada_accessibility_notes,   truncated field name: ada_access
+  manager_comments,   truncated field name: manager_co
+  facility_nbr,   truncated field name: facility_n
+  served_habitat_mgmt_unit_guid,   truncated field name: served_hab
+  date_inventoried,   truncated field name: date_inven
+  date_last_edited,   truncated field name: date_last_
+  sill_elevation_ft_asl,   truncated field name: sill_eleva
+  emergency_spill_elev_ft_asl,   truncated field name: emergency_
+  designed_pool_elevation_ft_asl,   truncated field name: designed_p
+  lam_program_project_code,   truncated field name: lam_progra
+  facility_type_code,   truncated field name: facility_t
+  facility_type_name,   truncated field name: facility_t
+  facility_group,   truncated field name: facility_g
+  facility_type_level_2,   truncated field name: facility_t
+  size_unit_of_measure,   truncated field name: size_unit_
+  inlet_size_feet,   truncated field name: inlet_size
+  outlet_size_feet,   truncated field name: outlet_siz
+  emergency_spill_width_in,   truncated field name: emergency_
+ 
+WARNING: Multiple fields will have the same shortened name: 
+  facility_t
+  facility_g
+  emergency_
+
+
+WARNING: Shapefile date fields can hold only dates (MM/DD/YYYY), not time (H:M:S).
+
+Data will be lost in 2 field(s):
+  date_inventoried (1 rows)
+  date_last_edited (251 rows)
+
+
+WARNING: Null values are not supported in shapefiles. They will be converted to other values depending on the field type (string -->'', dates --> '0', etc). 
+
+There are NULL values in 19 field(s):
+  name (String)
+  description (String)
+  size (Double)
+  digitizing_source_id (Integer)
+  ada_accessibility_notes (String)
+  manager_comments (String)
+  webtype (String)
+  facility_nbr (String)
+  date_inventoried (Date)
+  date_last_edited (Date)
+  year_built (SmallInteger)
+  sill_elevation_ft_asl (Double)
+  emergency_spill_elev_ft_asl (Double)
+  designed_pool_elevation_ft_asl (Double)
+  uniqueid (String)
+  size_unit_of_measure (String)
+  inlet_size_feet (Double)
+  outlet_size_feet (Double)
+  emergency_spill_width_in (Double)
+
+
+WARNING Shapefiles do not support blob, guid, global ID, or raster field types.
+
+2 field(s) will be impacted:
+2 guid field(s) - These fields will be converted to text and lose functionality:
+  facility_guid
+  served_habitat_mgmt_unit_guid
+
+
+WARNING: Attribute domains are not supported in shapefiles.
+
+There are 3 fields with attribute domains:
+  Field name: digitizing_source_id   Domain: digitizing_sources
+  Field name: county_id   Domain: counties
+  Field name: web_ready   Domain: BooleanSymbolValue
+
+
+-------------------------------
+Summary of warnings for FeatureDatasetTest/MNDNR_FOR_SEEDZONES:
+-------------------------------
+  Number of fields: Ok
+  Field name character length: Warning
+  String field length: Ok
+  Date fields with time: Ok
+  NULL values: Ok
+  Unsupported field types: Ok
+  Attribute domains: Ok
+  Subtypes: Ok
+
+
+More detailed description of warnings:
+
+
+WARNING: Shapefile field names cannot be longer than 10 characters. Only the first 10 characters will be used for field names that exceed this length. 
+
+There are 2 field names that will be truncated:
+  SEED_ZONE_ID,   truncated field name: SEED_ZONE_
+  SEED_ZONE_NAME,   truncated field name: SEED_ZONE_
+ 
+WARNING: Multiple fields will have the same shortened name: 
+  SEED_ZONE_
+
+
+
+-------------------------------
+Summary of warnings for FeatureDatasetTest/eda_surfacewater_stations:
+-------------------------------
+  Number of fields: Ok
+  Field name character length: Warning
+  String field length: Warning
+  Date fields with time: Warning
+  NULL values: Ok
+  Unsupported field types: Ok
+  Attribute domains: Ok
+  Subtypes: Ok
+
+
+More detailed description of warnings:
+
+
+WARNING: Shapefile field names cannot be longer than 10 characters. Only the first 10 characters will be used for field names that exceed this length. 
+
+There are 13 field names that will be truncated:
+  station_name,   truncated field name: station_na
+  organization,   truncated field name: organizati
+  station_type,   truncated field name: station_ty
+  first_sampling_year,   truncated field name: first_samp
+  latest_sampling_year,   truncated field name: latest_sam
+  wu_display_name,   truncated field name: wu_display
+  latest_sampling_date,   truncated field name: latest_sam
+  event_count,   truncated field name: event_coun
+  result_count,   truncated field name: result_cou
+  fips_county_code,   truncated field name: fips_count
+  county_name,   truncated field name: county_nam
+  language_test,   truncated field name: language_t
+  legal_description,   truncated field name: legal_desc
+ 
+WARNING: Multiple fields will have the same shortened name: 
+  latest_sam
+
+
+WARNING: Shapefile text/string fields are limited to 254 characters. Only the first 254 characters will be use for text fields that exceed this length. 
+
+There are 1 fields in which data will be lost:
+  legal_description contains 6 rows whose string field length exceeds 254 characters.
+
+
+WARNING: Shapefile date fields can hold only dates (MM/DD/YYYY), not time (H:M:S).
+
+Data will be lost in 1 field(s):
+  date_test (4 rows)
+
+
+-------------------------------
+Summary of warnings for SubtypeTest:
+-------------------------------
+  Number of fields: Ok
+  Field name character length: Ok
+  String field length: Ok
+  Date fields with time: Ok
+  NULL values: Ok
+  Unsupported field types: Warning
+  Attribute domains: Ok
+  Subtypes: Warning
+
+
+More detailed description of warnings:
+
+
+WARNING Shapefiles do not support blob, guid, global ID, or raster field types.
+
+5 field(s) will be impacted:
+1 BLOB field(s) - BLOB fields will be removed if the feature class is converted to shapefile:
+  BlobFun
+1 raster field - The field will be removed if the feature class is converted to shapefile:
+  RasterFun
+1 global id field -The field will be converted to text and lose functionality:
+  GlobalID
+
+
+WARNING: Subtypes are not supported in shapefiles.
+
+1 field(s) has subtypes:
+  Field name: Subtype
+

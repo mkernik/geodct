@@ -79,8 +79,8 @@ def GeodatabaseContent (geodatabase):
         else:
             other_data_types[child.name] = child.dataType
      
-    return OrderedDict(sorted(feature_classes.items())), other_data_types
-
+    #return feature classes sorted alphabetically
+    return OrderedDict(sorted(feature_classes.items(), key=lambda t: t[0].lower())), other_data_types
 
 
 def FieldList(feature_classes):

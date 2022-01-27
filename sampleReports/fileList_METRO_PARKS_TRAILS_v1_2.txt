@@ -1,0 +1,1929 @@
+File: C:\Users\kerni016\Desktop\ProfessionalDevelopmentLeave\data\METRO_PARKS_TRAILS_v1_2.gdb
+Date: 2022-01-27T09:32:48
+
+********************************************
+Summary
+********************************************
+
+The geodatabase includes the following data layers: 
+  2 Feature Class(es)
+  1 Table(s)
+
+
+********************************************
+Geodatabase content list
+********************************************
+
+Feature classes:
+
+	Data layer: MetroCollaborativeParks (Polygon)
+	Short description:
+
+	Data layer: MetroCollaborativeTrailsBikeways (Polyline)
+	Short description:
+
+Tables:
+
+	Data layer: MetroCollaborativeParksAmenities (Table)
+	Short description:
+
+
+
+********************************************
+Field List
+********************************************
+
+------------------------------------------------------------------------
+Standalone feature classes
+------------------------------------------------------------------------
+
+-----------------------------------------
+DATA-SPECIFIC INFORMATION FOR: MetroCollaborativeParks
+-----------------------------------------
+A. Number of features:  0
+B. Number of fields: 52
+C. Field list
+	1. Name: OBJECTID (OID)
+	Description:
+
+	2. Name: SHAPE (Geometry)
+	Description:
+
+	3. Name: PARKID (String)
+	Description:
+
+	4. Name: PARKNAME (String)
+	Description:
+
+	5. Name: NAME_ALT (String)
+	Description:
+
+	6. Name: PARK_ADDR (String)
+	Description:
+
+	7. Name: CITY_MUNI
+	Description:
+		Afton
+		Andover
+		Anoka
+		Apple Valley
+		Arden Hills
+		Bayport
+		Baytown Township
+		Belle Plaine
+		Belle Plaine Township
+		Benton Township
+		Bethel
+		Birchwood Village
+		Blaine
+		Blakeley Township
+		Bloomington
+		Brooklyn Center
+		Brooklyn Park
+		Burns Township
+		Burnsville
+		Burnsville Township
+		Camden Township
+		Cannon Falls
+		Carver
+		Castle Rock Township
+		Cedar Lake Township
+		Centerville
+		Champlin
+		Chanhassen
+		Chaska
+		Chaska Township
+		Circle Pines
+		Coates
+		Cologne
+		Columbia Heights
+		Columbus
+		Columbus Township
+		Coon Rapids
+		Corcoran
+		Cottage Grove
+		Cottage Grove Township
+		Credit River Township
+		Crystal
+		Dahlgren Township
+		Dayton
+		Deephaven
+		Dellwood
+		Denmark Township
+		Douglas Township
+		Eagan
+		Eagan Township
+		East Bethel
+		Eden Prairie
+		Edina
+		Elko
+		Elko New Market
+		Empire Township
+		Eureka Township
+		Excelsior
+		Falcon Heights
+		Farmington
+		Forest Lake
+		Forest Lake Township
+		Fort Snelling (Unorganized)
+		Fridley
+		Gem Lake
+		Golden Valley
+		Grant
+		Grant Township
+		Greenfield
+		Greenfield Township
+		Greenvale Township
+		Greenwood
+		Grey Cloud Island Township
+		Grow Township
+		Ham Lake
+		Hamburg
+		Hampton
+		Hampton Township
+		Hancock Township
+		Hanover
+		Hassan Township
+		Hastings
+		Helena Township
+		Hilltop
+		Hollywood Township
+		Hopkins
+		Hugo
+		Independence
+		Inver Grove Heights
+		Inver Grove Township
+		Jackson Township
+		Jordan
+		Lake Elmo
+		Lake St. Croix Beach
+		Lakeland
+		Lakeland Shores
+		Laketown Township
+		Lakeville
+		Landfall
+		Lauderdale
+		Lebanon Township
+		Lexington
+		Lilydale
+		Lino Lakes
+		Linwood Township
+		Little Canada
+		Long Lake
+		Loretto
+		Louisville Township
+		Mahtomedi
+		Maple Grove
+		Maple Plain
+		Maplewood
+		Marine on St. Croix
+		Marshan Township
+		May Township
+		Mayer
+		Medicine Lake
+		Medina
+		Mendota
+		Mendota Heights
+		Miesville
+		Minneapolis
+		Minnesota State Fair Grounds
+		Minnetonka
+		Minnetonka Beach
+		Minnetrista
+		Minnetrista Township
+		Mound
+		Mounds View
+		Mpls.-St. Paul Airport
+		New Brighton
+		New Germany
+		New Hope
+		New Market
+		New Market Township
+		New Prague
+		New Scandia Township
+		New Trier
+		Newport
+		Nininger Township
+		North Oaks
+		North St. Paul
+		Northfield
+		Norwood
+		Norwood Young America
+		Nowthen
+		Oak Grove
+		Oak Grove Township
+		Oak Park Heights
+		Oakdale
+		Orono
+		Osseo
+		Pine Springs
+		Plymouth
+		Prior Lake
+		Ramsey
+		Randolph
+		Randolph Township
+		Ravenna Township
+		Richfield
+		Robbinsdale
+		Rockford
+		Rogers
+		Rosemount
+		Roseville
+		San Francisco Township
+		Sand Creek Township
+		Savage
+		Scandia
+		Sciota Township
+		Shakopee
+		Shakopee Community
+		Shoreview
+		Shorewood
+		South St. Paul
+		Spring Lake Park
+		Spring Lake Township
+		Spring Park
+		St. Anthony
+		St. Bonifacius
+		St. Francis
+		St. Lawrence Township
+		St. Louis Park
+		St. Marys Point
+		St. Paul
+		St. Paul Downtown Airport
+		St. Paul Park
+		Stillwater
+		Stillwater Township
+		Sunfish Lake
+		Tonka Bay
+		Vadnais Heights
+		Vermillion
+		Vermillion Township
+		Victoria
+		Waconia
+		Waconia Township
+		Waterford Township
+		Watertown
+		Watertown Township
+		Wayzata
+		West Lakeland Township
+		West St. Paul
+		White Bear Lake
+		White Bear Township
+		Willernie
+		Woodbury
+		Woodbury Township
+		Woodland
+		Young America
+		Young America Township
+
+	8. Name: COUNTY
+	Description:
+		001: Aitkin
+		003: Anoka
+		005: Becker
+		007: Beltrami
+		009: Benton
+		011: Big Stone
+		013: Blue Earth
+		015: Brown
+		017: Carlton
+		019: Carver
+		021: Cass
+		023: Chippewa
+		025: Chisago
+		027: Clay
+		029: Clearwater
+		031: Cook
+		033: Cottonwood
+		035: Crow Wing
+		037: Dakota
+		039: Dodge
+		041: Douglas
+		043: Faribault
+		045: Fillmore
+		047: Freeborn
+		049: Goodhue
+		051: Grant
+		053: Hennepin
+		055: Houston
+		057: Hubbard
+		059: Isanti
+		061: Itasca
+		063: Jackson
+		065: Kanabec
+		067: Kandiyohi
+		069: Kittson
+		071: Koochiching
+		073: Lac qui Parle
+		075: Lake
+		077: Lake of the Woods
+		079: Le Sueur
+		081: Lincoln
+		083: Lyon
+		085: McLeod
+		087: Mahnomen
+		089: Marshall
+		091: Martin
+		093: Meeker
+		095: Mille Lacs
+		097: Morrison
+		099: Mower
+		101: Murray
+		103: Nicollet
+		105: Nobles
+		107: Norman
+		109: Olmsted
+		111: Otter Tail
+		113: Pennington
+		115: Pine
+		117: Pipestone
+		119: Polk
+		121: Pope
+		123: Ramsey
+		125: Red Lake
+		127: Redwood
+		129: Renville
+		131: Rice
+		133: Rock
+		135: Roseau
+		137: Saint Louis
+		139: Scott
+		141: Sherburne
+		143: Sibley
+		145: Stearns
+		147: Steele
+		149: Stevens
+		151: Swift
+		153: Todd
+		155: Traverse
+		157: Wabasha
+		159: Wadena
+		161: Waseca
+		163: Washington
+		165: Watonwan
+		167: Wilkin
+		169: Winona
+		171: Wright
+		173: Yellow Medicine
+
+	9. Name: STATE (String)
+	Description:
+
+	10. Name: PARKSTATUS
+	Description:
+		Closed
+		Decommissioned
+		Open
+		Open Fee
+		Open Restricted
+		Planned
+		Proposed
+		Unknown
+
+	11. Name: WINTER_STS
+	Description:
+		Closed
+		Open
+		Unknown
+
+	12. Name: FUNC_TYPE (String)
+	Description:
+
+	13. Name: LANDOWNER (String)
+	Description:
+
+	14. Name: OWNERTYPE
+	Description:
+		01: Federal
+		02: State
+		03: County
+		04: Special District
+		05: Municipal
+		06: Tribal
+		07: Regional
+		08: Port Authority
+		09: Joint
+		10: School District
+		97: Unknown
+		98: No Value
+		99: Private
+
+	15. Name: AGENCYNAME (String)
+	Description:
+
+	16. Name: AGENCYTYPE
+	Description:
+		01: Federal
+		02: State
+		03: County
+		04: Special District
+		05: Municipal
+		06: Tribal
+		07: Regional
+		08: Port Authority
+		09: Joint
+		10: School District
+		97: Unknown
+		98: No Value
+		99: Private
+
+	17. Name: YEAROPEN (SmallInteger)
+	Description:
+
+	18. Name: LANDCOVER (String)
+	Description:
+
+	19. Name: WATERACRES (Double)
+	Description:
+
+	20. Name: LAND_ACRES (Double)
+	Description:
+
+	21. Name: PARK_ACRES (Double)
+	Description:
+
+	22. Name: PLND_ACRES (Double)
+	Description:
+
+	23. Name: TRL_MILES (Double)
+	Description:
+
+	24. Name: ACQSOURCE
+	Description:
+		Capital Budget
+		Donation
+		Exactions
+		Federal Grant
+		Local Bond
+		Metropolitan Council Grant
+		Multiple
+		Other
+		Other Grant
+		Partnership
+		Special Tax or Assessment
+		State Grant
+		Transfer
+		Unknown
+
+	25. Name: ACQMETHOD
+	Description:
+		Development Agreement
+		Donation
+		Easement
+		Eminent Domain
+		Fee Simple
+		Land Exchange
+		Lease
+		Other
+		Transfer
+		Unknown
+
+	26. Name: ACQCOMMENT (String)
+	Description:
+
+	27. Name: DEVSOURCE
+	Description:
+		Capital Budget
+		Donation
+		Exactions
+		Federal Grant
+		Local Bond
+		Metropolitan Council Grant
+		Multiple
+		Other
+		Other Grant
+		Partnership
+		Special Tax or Assessment
+		State Grant
+		Transfer
+		Unknown
+
+	28. Name: DEVCOMMENT (String)
+	Description:
+
+	29. Name: RESTRICTS
+	Description:
+		Deed/Covenant
+		Easement
+		License
+		Lien
+		Multiple
+		None
+		Other
+		Zoning
+
+	30. Name: LWCFPROT
+	Description:
+		No
+		Unknown
+		Yes
+
+	31. Name: OTHERPROT
+	Description:
+		Conservation Easement
+		Federal Grant
+		Metropolitan Council Restrictive Covenant
+		Multiple
+		None
+		Railtrail
+		State Specific
+		Trail Easement
+		Unknown
+
+	32. Name: RESPRTCMNT (String)
+	Description:
+
+	33. Name: SERVICAREA
+	Description:
+		0 - 0.5: 0 - 0.5 miles
+		0 - 100: 0 - 100 miles
+		0 - 100 or more: 0 - 100 miles or more
+		0 - 25: 0 - 25 miles
+		0 - 5: 0 - 5 miles
+
+	34. Name: MGMT_PRIOR
+	Description:
+		Active
+		Corridor
+		Historical/Cultural
+		Mixed-Use
+		Natural Area
+		Passive
+		Special Use
+
+	35. Name: VLTR_OPPS
+	Description:
+		No
+		Unknown
+		Yes
+
+	36. Name: SPEC_FEAT (String)
+	Description:
+
+	37. Name: PARK_HOURS (String)
+	Description:
+
+	38. Name: PKING_CAP (Integer)
+	Description:
+
+	39. Name: VISITORCTS (Integer)
+	Description:
+
+	40. Name: PASSHOLDER (Integer)
+	Description:
+
+	41. Name: PARK_EMAIL (String)
+	Description:
+
+	42. Name: PARK_PHONE (String)
+	Description:
+
+	43. Name: PARK_URL (String)
+	Description:
+
+	44. Name: MNTCEEMAIL (String)
+	Description:
+
+	45. Name: MNTCEPHONE (String)
+	Description:
+
+	46. Name: DATAAUTHOR
+	Description:
+		Afton
+		Andover
+		Anoka
+		Anoka County
+		Apple Valley
+		Arden Hills
+		Bayport
+		Baytown Township
+		Belle Plaine
+		Belle Plaine Township
+		Benton Township
+		Bethel
+		Birchwood Village
+		Blaine
+		Blakeley Township
+		Bloomington
+		Brooklyn Center
+		Brooklyn Park
+		Burns Township
+		Burnsville
+		Burnsville Township
+		Camden Township
+		Carver
+		Carver County
+		Castle Rock Township
+		Cedar Lake Township
+		Centerville
+		Champlin
+		Chanhassen
+		Chaska
+		Chaska Township
+		Circle Pines
+		Coates
+		Cologne
+		Columbia Heights
+		Columbus
+		Columbus Township
+		Coon Rapids
+		Corcoran
+		Cottage Grove
+		Cottage Grove Township
+		Credit River Township
+		Crystal
+		Dahlgren Township
+		Dakota County
+		Dayton
+		Deephaven
+		Dellwood
+		Denmark Township
+		Douglas Township
+		Eagan
+		Eagan Township
+		East Bethel
+		Eden Prairie
+		Edina
+		Elko
+		Elko New Market
+		Empire Township
+		Eureka Township
+		Excelsior
+		Falcon Heights
+		Farmington
+		Forest Lake
+		Forest Lake Township
+		Fort Snelling (Unorganized)
+		Fridley
+		Gem Lake
+		Golden Valley
+		Grant
+		Grant Township
+		Greenfield
+		Greenfield Township
+		Greenvale Township
+		Greenwood
+		Grey Cloud Island Township
+		Grow Township
+		Ham Lake
+		Hamburg
+		Hampton
+		Hampton Township
+		Hancock Township
+		Hanover
+		Hassan Township
+		Hastings
+		Helena Township
+		Hennepin County
+		Hilltop
+		Hollywood Township
+		Hopkins
+		Hugo
+		Independence
+		Inver Grove Heights
+		Inver Grove Township
+		Jackson Township
+		Jordan
+		Lake Elmo
+		Lake St. Croix Beach
+		Lakeland
+		Lakeland Shores
+		Laketown Township
+		Lakeville
+		Landfall
+		Lauderdale
+		Lebanon Township
+		Lexington
+		Lilydale
+		Lino Lakes
+		Linwood Township
+		Little Canada
+		Long Lake
+		Loretto
+		Louisville Township
+		Mahtomedi
+		Maple Grove
+		Maple Plain
+		Maplewood
+		Marine on St. Croix
+		Marshan Township
+		May Township
+		Mayer
+		Medicine Lake
+		Medina
+		Mendota
+		Mendota Heights
+		Metropolitan Council
+		Miesville
+		Minneapolis
+		Minneapolis Parks and Recreation
+		Minnesota DNR
+		Minnesota DOT
+		Minnesota State Fair Grounds
+		Minnetonka
+		Minnetonka Beach
+		Minnetrista
+		Minnetrista Township
+		Mound
+		Mounds View
+		Mpls.-St. Paul Airport
+		National Park Service
+		New Brighton
+		New Germany
+		New Hope
+		New Market
+		New Market Township
+		New Prague
+		New Scandia Township
+		New Trier
+		Newport
+		Nininger Township
+		North Oaks
+		North St. Paul
+		Northfield
+		Norwood
+		Norwood Young America
+		Nowthen
+		Oak Grove
+		Oak Grove Township
+		Oak Park Heights
+		Oakdale
+		Orono
+		Osseo
+		Pine Springs
+		Plymouth
+		Prior Lake
+		Ramsey
+		Ramsey County
+		Randolph
+		Randolph Township
+		Ravenna Township
+		Richfield
+		Robbinsdale
+		Rockford
+		Rogers
+		Rosemount
+		Roseville
+		San Francisco Township
+		Sand Creek Township
+		Savage
+		Scandia
+		Sciota Township
+		Scott County
+		Shakopee
+		Shakopee Community
+		Shoreview
+		Shorewood
+		South St. Paul
+		Spring Lake Park
+		Spring Lake Township
+		Spring Park
+		St. Anthony
+		St. Bonifacius
+		St. Francis
+		St. Lawrence Township
+		St. Louis Park
+		St. Marys Point
+		St. Paul
+		St. Paul Downtown Airport
+		St. Paul Park
+		Stillwater
+		Stillwater Township
+		Sunfish Lake
+		Three Rivers Park District
+		Tonka Bay
+		Vadnais Heights
+		Vermillion
+		Vermillion Township
+		Victoria
+		Waconia
+		Waconia Township
+		Washington County
+		Waterford Township
+		Watertown
+		Watertown Township
+		Wayzata
+		West Lakeland Township
+		West St. Paul
+		White Bear Lake
+		White Bear Township
+		Willernie
+		Woodbury
+		Woodbury Township
+		Woodland
+		Young America
+		Young America Township
+
+	47. Name: EDITED_BY (String)
+	Description:
+
+	48. Name: EDITED_DT (Date)
+	Description:
+
+	49. Name: CREATED_BY (String)
+	Description:
+
+	50. Name: CREATED_DT (Date)
+	Description:
+
+	51. Name: SHAPE_Length (Double)
+	Description:
+
+	52. Name: SHAPE_Area (Double)
+	Description:
+
+-----------------------------------------
+DATA-SPECIFIC INFORMATION FOR: MetroCollaborativeTrailsBikeways
+-----------------------------------------
+A. Number of features:  0
+B. Number of fields: 66
+C. Field list
+	1. Name: OBJECTID (OID)
+	Description:
+
+	2. Name: SHAPE (Geometry)
+	Description:
+
+	3. Name: UNIQUE_ID (String)
+	Description:
+
+	4. Name: TRAILNAME (String)
+	Description:
+
+	5. Name: TRLSYSNAME (String)
+	Description:
+
+	6. Name: SHAREDNAME (String)
+	Description:
+
+	7. Name: FED_SYS
+	Description:
+		No
+		Unknown
+		Yes
+
+	8. Name: NTL_SYS
+	Description:
+		No
+		Unknown
+		Yes
+
+	9. Name: STATE_SYS
+	Description:
+		No
+		Unknown
+		Yes
+
+	10. Name: REG_SYS
+	Description:
+		No
+		Unknown
+		Yes
+
+	11. Name: CTY_SYS
+	Description:
+		No
+		Unknown
+		Yes
+
+	12. Name: LOC_SYS
+	Description:
+		No
+		Unknown
+		Yes
+
+	13. Name: TRBL_SYS
+	Description:
+		No
+		Unknown
+		Yes
+
+	14. Name: PRVTE_SYS
+	Description:
+		No
+		Unknown
+		Yes
+
+	15. Name: PROT_SYS
+	Description:
+		No
+		Unknown
+		Yes
+
+	16. Name: GEN_TYPE
+	Description:
+		Off-Street
+		On-Street
+		Unknown
+
+	17. Name: SUMMER_USE
+	Description:
+		ATV
+		Advisory Bike Lane
+		Bike Boulevard
+		Bike-Only Trail
+		Bike/Pedestrian Bridge
+		Bike/Pedestrian Tunnel
+		Bikeable Shoulder
+		Buffered Bike Lane
+		Contraflow Bike Lane
+		Crossing
+		Crosswalk
+		Cycle Track
+		Equestrian
+		Facility Type TBD
+		Motorcycle
+		Motorized Watercraft
+		Mountain Bike
+		Multi-Use Trail
+		Non-Motorized Watercraft
+		Not Specified
+		Pedestrian-Only Trail
+		Portage
+		Separated-Use Trail
+		Shared Bike/Bus Lane
+		Sharrow/Shared Lane
+		Sidewalk
+		Signed Bike Route
+		Standard Bike Lane
+		Unknown
+
+	18. Name: WINTER_USE
+	Description:
+		Advisory Bike Lane
+		Bike Boulevard
+		Bike-Only Trail
+		Bike/Pedestrian Bridge
+		Bike/Pedestrian Tunnel
+		Bikeable Shoulder
+		Buffered Bike Lane
+		Contraflow Bike Lane
+		Cross-Country Ski
+		Crossing
+		Crosswalk
+		Cycle Track
+		Dog Sled/Skijoring
+		Equestrian
+		Facility Type TBD
+		Mountain Bike
+		Multi-Use Trail
+		Not Specified
+		Pedestrian-Only Trail
+		Portage
+		Separated-Use Trail
+		Shared Bike/Bus Lane
+		Sharrow/Shared Lane
+		Sidewalk
+		Signed Bike Route
+		Snowmobile
+		Snowshoe
+		Standard Bike Lane
+		Unknown
+
+	19. Name: LANDOWNER (String)
+	Description:
+
+	20. Name: OWNERTYPE
+	Description:
+		01: Federal
+		02: State
+		03: County
+		04: Special District
+		05: Municipal
+		06: Tribal
+		07: Regional
+		08: Port Authority
+		09: Joint
+		10: School District
+		97: Unknown
+		98: No Value
+		99: Private
+
+	21. Name: AGENCYNAME (String)
+	Description:
+
+	22. Name: AGCY_TYPE
+	Description:
+		01: Federal
+		02: State
+		03: County
+		04: Special District
+		05: Municipal
+		06: Tribal
+		07: Regional
+		08: Port Authority
+		09: Joint
+		10: School District
+		97: Unknown
+		98: No Value
+		99: Private
+
+	23. Name: CITY_MUNI
+	Description:
+		Afton
+		Andover
+		Anoka
+		Apple Valley
+		Arden Hills
+		Bayport
+		Baytown Township
+		Belle Plaine
+		Belle Plaine Township
+		Benton Township
+		Bethel
+		Birchwood Village
+		Blaine
+		Blakeley Township
+		Bloomington
+		Brooklyn Center
+		Brooklyn Park
+		Burns Township
+		Burnsville
+		Burnsville Township
+		Camden Township
+		Cannon Falls
+		Carver
+		Castle Rock Township
+		Cedar Lake Township
+		Centerville
+		Champlin
+		Chanhassen
+		Chaska
+		Chaska Township
+		Circle Pines
+		Coates
+		Cologne
+		Columbia Heights
+		Columbus
+		Columbus Township
+		Coon Rapids
+		Corcoran
+		Cottage Grove
+		Cottage Grove Township
+		Credit River Township
+		Crystal
+		Dahlgren Township
+		Dayton
+		Deephaven
+		Dellwood
+		Denmark Township
+		Douglas Township
+		Eagan
+		Eagan Township
+		East Bethel
+		Eden Prairie
+		Edina
+		Elko
+		Elko New Market
+		Empire Township
+		Eureka Township
+		Excelsior
+		Falcon Heights
+		Farmington
+		Forest Lake
+		Forest Lake Township
+		Fort Snelling (Unorganized)
+		Fridley
+		Gem Lake
+		Golden Valley
+		Grant
+		Grant Township
+		Greenfield
+		Greenfield Township
+		Greenvale Township
+		Greenwood
+		Grey Cloud Island Township
+		Grow Township
+		Ham Lake
+		Hamburg
+		Hampton
+		Hampton Township
+		Hancock Township
+		Hanover
+		Hassan Township
+		Hastings
+		Helena Township
+		Hilltop
+		Hollywood Township
+		Hopkins
+		Hugo
+		Independence
+		Inver Grove Heights
+		Inver Grove Township
+		Jackson Township
+		Jordan
+		Lake Elmo
+		Lake St. Croix Beach
+		Lakeland
+		Lakeland Shores
+		Laketown Township
+		Lakeville
+		Landfall
+		Lauderdale
+		Lebanon Township
+		Lexington
+		Lilydale
+		Lino Lakes
+		Linwood Township
+		Little Canada
+		Long Lake
+		Loretto
+		Louisville Township
+		Mahtomedi
+		Maple Grove
+		Maple Plain
+		Maplewood
+		Marine on St. Croix
+		Marshan Township
+		May Township
+		Mayer
+		Medicine Lake
+		Medina
+		Mendota
+		Mendota Heights
+		Miesville
+		Minneapolis
+		Minnesota State Fair Grounds
+		Minnetonka
+		Minnetonka Beach
+		Minnetrista
+		Minnetrista Township
+		Mound
+		Mounds View
+		Mpls.-St. Paul Airport
+		New Brighton
+		New Germany
+		New Hope
+		New Market
+		New Market Township
+		New Prague
+		New Scandia Township
+		New Trier
+		Newport
+		Nininger Township
+		North Oaks
+		North St. Paul
+		Northfield
+		Norwood
+		Norwood Young America
+		Nowthen
+		Oak Grove
+		Oak Grove Township
+		Oak Park Heights
+		Oakdale
+		Orono
+		Osseo
+		Pine Springs
+		Plymouth
+		Prior Lake
+		Ramsey
+		Randolph
+		Randolph Township
+		Ravenna Township
+		Richfield
+		Robbinsdale
+		Rockford
+		Rogers
+		Rosemount
+		Roseville
+		San Francisco Township
+		Sand Creek Township
+		Savage
+		Scandia
+		Sciota Township
+		Shakopee
+		Shakopee Community
+		Shoreview
+		Shorewood
+		South St. Paul
+		Spring Lake Park
+		Spring Lake Township
+		Spring Park
+		St. Anthony
+		St. Bonifacius
+		St. Francis
+		St. Lawrence Township
+		St. Louis Park
+		St. Marys Point
+		St. Paul
+		St. Paul Downtown Airport
+		St. Paul Park
+		Stillwater
+		Stillwater Township
+		Sunfish Lake
+		Tonka Bay
+		Vadnais Heights
+		Vermillion
+		Vermillion Township
+		Victoria
+		Waconia
+		Waconia Township
+		Waterford Township
+		Watertown
+		Watertown Township
+		Wayzata
+		West Lakeland Township
+		West St. Paul
+		White Bear Lake
+		White Bear Township
+		Willernie
+		Woodbury
+		Woodbury Township
+		Woodland
+		Young America
+		Young America Township
+
+	24. Name: COUNTY
+	Description:
+		001: Aitkin
+		003: Anoka
+		005: Becker
+		007: Beltrami
+		009: Benton
+		011: Big Stone
+		013: Blue Earth
+		015: Brown
+		017: Carlton
+		019: Carver
+		021: Cass
+		023: Chippewa
+		025: Chisago
+		027: Clay
+		029: Clearwater
+		031: Cook
+		033: Cottonwood
+		035: Crow Wing
+		037: Dakota
+		039: Dodge
+		041: Douglas
+		043: Faribault
+		045: Fillmore
+		047: Freeborn
+		049: Goodhue
+		051: Grant
+		053: Hennepin
+		055: Houston
+		057: Hubbard
+		059: Isanti
+		061: Itasca
+		063: Jackson
+		065: Kanabec
+		067: Kandiyohi
+		069: Kittson
+		071: Koochiching
+		073: Lac qui Parle
+		075: Lake
+		077: Lake of the Woods
+		079: Le Sueur
+		081: Lincoln
+		083: Lyon
+		085: McLeod
+		087: Mahnomen
+		089: Marshall
+		091: Martin
+		093: Meeker
+		095: Mille Lacs
+		097: Morrison
+		099: Mower
+		101: Murray
+		103: Nicollet
+		105: Nobles
+		107: Norman
+		109: Olmsted
+		111: Otter Tail
+		113: Pennington
+		115: Pine
+		117: Pipestone
+		119: Polk
+		121: Pope
+		123: Ramsey
+		125: Red Lake
+		127: Redwood
+		129: Renville
+		131: Rice
+		133: Rock
+		135: Roseau
+		137: Saint Louis
+		139: Scott
+		141: Sherburne
+		143: Sibley
+		145: Stearns
+		147: Steele
+		149: Stevens
+		151: Swift
+		153: Todd
+		155: Traverse
+		157: Wabasha
+		159: Wadena
+		161: Waseca
+		163: Washington
+		165: Watonwan
+		167: Wilkin
+		169: Winona
+		171: Wright
+		173: Yellow Medicine
+
+	25. Name: STATE (String)
+	Description:
+
+	26. Name: PARKID (String)
+	Description:
+
+	27. Name: TRLSTATUS
+	Description:
+		Closed
+		Construction
+		Decommissioned
+		Detour
+		Open
+		Open Fee
+		Open Restricted
+		Planned
+		Programmed
+		Proposed
+		Unknown
+		Unofficial
+
+	28. Name: SURFACETYP
+	Description:
+		Bitum Asphalt
+		Chunk Wood
+		Concrete
+		Decking
+		Imported Material
+		Limestone
+		Native
+		Other
+		Snow
+		Unknown
+		Water
+
+	29. Name: CONDITION
+	Description:
+		Excellent
+		Failed/Unsafe
+		Fair
+		Good
+		Needs Maintenance
+		Non-functioning
+		Poor
+		Under Construction
+		Unknown
+		Very Good
+		Very Poor
+
+	30. Name: PARL_RD (String)
+	Description:
+
+	31. Name: ALTPARLRD (String)
+	Description:
+
+	32. Name: YEAR_PRGRM (SmallInteger)
+	Description:
+
+	33. Name: YEAR_OPEN (SmallInteger)
+	Description:
+
+	34. Name: LENGTH (Double)
+	Description:
+
+	35. Name: WIDTH (Double)
+	Description:
+
+	36. Name: SIDESTREET
+	Description:
+		Both Sides
+		N/A
+		One Side
+		Unknown
+
+	37. Name: PRD_SPEED (SmallInteger)
+	Description:
+
+	38. Name: RTE_SPEED (SmallInteger)
+	Description:
+
+	39. Name: DIRECTION
+	Description:
+		One Way
+		Two Way
+		Unknown
+
+	40. Name: RBTN
+	Description:
+		N/A
+		Tier 1
+		Tier 2
+		Unknown
+
+	41. Name: DIFFRTG
+	Description:
+		Easiest
+		More Difficult
+		Most Difficult
+		Unknown
+		Varies
+
+	42. Name: ACCESS_STS
+	Description:
+		Accessible
+		Ineligible
+		Not Accessible
+		Not Evaluated
+		Unknown
+
+	43. Name: SEASNL_ACC
+	Description:
+		Summer Only
+		Unknown
+		Winter Only
+		Year Round
+
+	44. Name: MOTOR_USE
+	Description:
+		Motorized Allowed
+		Motorized Prohibited
+		Motorized Seasonal
+		Unknown
+
+	45. Name: MNTSUMMER (String)
+	Description:
+
+	46. Name: MNTWINTER (String)
+	Description:
+
+	47. Name: PVMNTYEAR (SmallInteger)
+	Description:
+
+	48. Name: PVMNTMAINT
+	Description:
+		Chip Seal
+		Fog Seal
+		Mill and Overlay
+		Other
+		Unknown
+
+	49. Name: PVMNTMARKS
+	Description:
+		No
+		Unknown
+		Yes
+
+	50. Name: ACQSOURCE
+	Description:
+		Capital Budget
+		Donation
+		Exactions
+		Federal Grant
+		Local Bond
+		Metropolitan Council Grant
+		Multiple
+		Other
+		Other Grant
+		Partnership
+		Special Tax or Assessment
+		State Grant
+		Transfer
+		Unknown
+
+	51. Name: ACQMETHOD
+	Description:
+		Development Agreement
+		Donation
+		Easement
+		Eminent Domain
+		Fee Simple
+		Land Exchange
+		Lease
+		Other
+		Transfer
+		Unknown
+
+	52. Name: ACQCOMMENT (String)
+	Description:
+
+	53. Name: LWCFPROT
+	Description:
+		No
+		Unknown
+		Yes
+
+	54. Name: OTHERPROT
+	Description:
+		Conservation Easement
+		Federal Grant
+		Metropolitan Council Restrictive Covenant
+		Multiple
+		None
+		Railtrail
+		State Specific
+		Trail Easement
+		Unknown
+
+	55. Name: RESPRTCMNT (String)
+	Description:
+
+	56. Name: SRTS_ZONE
+	Description:
+		No
+		Unknown
+		Yes
+
+	57. Name: LIGHTING
+	Description:
+		No
+		Unknown
+		Yes
+
+	58. Name: ADT_BIKE (Integer)
+	Description:
+
+	59. Name: ADT_PED (Integer)
+	Description:
+
+	60. Name: TRL_URL (String)
+	Description:
+
+	61. Name: DATAAUTHOR
+	Description:
+		Afton
+		Andover
+		Anoka
+		Anoka County
+		Apple Valley
+		Arden Hills
+		Bayport
+		Baytown Township
+		Belle Plaine
+		Belle Plaine Township
+		Benton Township
+		Bethel
+		Birchwood Village
+		Blaine
+		Blakeley Township
+		Bloomington
+		Brooklyn Center
+		Brooklyn Park
+		Burns Township
+		Burnsville
+		Burnsville Township
+		Camden Township
+		Carver
+		Carver County
+		Castle Rock Township
+		Cedar Lake Township
+		Centerville
+		Champlin
+		Chanhassen
+		Chaska
+		Chaska Township
+		Circle Pines
+		Coates
+		Cologne
+		Columbia Heights
+		Columbus
+		Columbus Township
+		Coon Rapids
+		Corcoran
+		Cottage Grove
+		Cottage Grove Township
+		Credit River Township
+		Crystal
+		Dahlgren Township
+		Dakota County
+		Dayton
+		Deephaven
+		Dellwood
+		Denmark Township
+		Douglas Township
+		Eagan
+		Eagan Township
+		East Bethel
+		Eden Prairie
+		Edina
+		Elko
+		Elko New Market
+		Empire Township
+		Eureka Township
+		Excelsior
+		Falcon Heights
+		Farmington
+		Forest Lake
+		Forest Lake Township
+		Fort Snelling (Unorganized)
+		Fridley
+		Gem Lake
+		Golden Valley
+		Grant
+		Grant Township
+		Greenfield
+		Greenfield Township
+		Greenvale Township
+		Greenwood
+		Grey Cloud Island Township
+		Grow Township
+		Ham Lake
+		Hamburg
+		Hampton
+		Hampton Township
+		Hancock Township
+		Hanover
+		Hassan Township
+		Hastings
+		Helena Township
+		Hennepin County
+		Hilltop
+		Hollywood Township
+		Hopkins
+		Hugo
+		Independence
+		Inver Grove Heights
+		Inver Grove Township
+		Jackson Township
+		Jordan
+		Lake Elmo
+		Lake St. Croix Beach
+		Lakeland
+		Lakeland Shores
+		Laketown Township
+		Lakeville
+		Landfall
+		Lauderdale
+		Lebanon Township
+		Lexington
+		Lilydale
+		Lino Lakes
+		Linwood Township
+		Little Canada
+		Long Lake
+		Loretto
+		Louisville Township
+		Mahtomedi
+		Maple Grove
+		Maple Plain
+		Maplewood
+		Marine on St. Croix
+		Marshan Township
+		May Township
+		Mayer
+		Medicine Lake
+		Medina
+		Mendota
+		Mendota Heights
+		Metropolitan Council
+		Miesville
+		Minneapolis
+		Minneapolis Parks and Recreation
+		Minnesota DNR
+		Minnesota DOT
+		Minnesota State Fair Grounds
+		Minnetonka
+		Minnetonka Beach
+		Minnetrista
+		Minnetrista Township
+		Mound
+		Mounds View
+		Mpls.-St. Paul Airport
+		National Park Service
+		New Brighton
+		New Germany
+		New Hope
+		New Market
+		New Market Township
+		New Prague
+		New Scandia Township
+		New Trier
+		Newport
+		Nininger Township
+		North Oaks
+		North St. Paul
+		Northfield
+		Norwood
+		Norwood Young America
+		Nowthen
+		Oak Grove
+		Oak Grove Township
+		Oak Park Heights
+		Oakdale
+		Orono
+		Osseo
+		Pine Springs
+		Plymouth
+		Prior Lake
+		Ramsey
+		Ramsey County
+		Randolph
+		Randolph Township
+		Ravenna Township
+		Richfield
+		Robbinsdale
+		Rockford
+		Rogers
+		Rosemount
+		Roseville
+		San Francisco Township
+		Sand Creek Township
+		Savage
+		Scandia
+		Sciota Township
+		Scott County
+		Shakopee
+		Shakopee Community
+		Shoreview
+		Shorewood
+		South St. Paul
+		Spring Lake Park
+		Spring Lake Township
+		Spring Park
+		St. Anthony
+		St. Bonifacius
+		St. Francis
+		St. Lawrence Township
+		St. Louis Park
+		St. Marys Point
+		St. Paul
+		St. Paul Downtown Airport
+		St. Paul Park
+		Stillwater
+		Stillwater Township
+		Sunfish Lake
+		Three Rivers Park District
+		Tonka Bay
+		Vadnais Heights
+		Vermillion
+		Vermillion Township
+		Victoria
+		Waconia
+		Waconia Township
+		Washington County
+		Waterford Township
+		Watertown
+		Watertown Township
+		Wayzata
+		West Lakeland Township
+		West St. Paul
+		White Bear Lake
+		White Bear Township
+		Willernie
+		Woodbury
+		Woodbury Township
+		Woodland
+		Young America
+		Young America Township
+
+	62. Name: EDITED_BY (String)
+	Description:
+
+	63. Name: EDITED_DT (Date)
+	Description:
+
+	64. Name: CREATED_BY (String)
+	Description:
+
+	65. Name: CREATED_DT (Date)
+	Description:
+
+	66. Name: SHAPE_Length (Double)
+	Description:
+
+
+------------------------------------------------------------------------
+Standalone tables
+------------------------------------------------------------------------
+
+-----------------------------------------
+DATA-SPECIFIC INFORMATION FOR: MetroCollaborativeParksAmenities
+-----------------------------------------
+A. Number of features:  0
+B. Number of fields: 6
+C. Field list
+	1. Name: OBJECTID (OID)
+	Description:
+
+	2. Name: PARKID (String)
+	Description:
+
+	3. Name: AMENITIES
+	Description:
+		Adaptive Equipment
+		Adult Daycare
+		Amphitheater
+		Archery Range
+		Art Education
+		Astronomical Observation Area
+		BBQ Gathering Area
+		Bandshell
+		Baseball Field
+		Basic First Aid
+		Basketball Court
+		Beach
+		Bench
+		Bicycle Parking
+		Bicycle Sharing Station
+		Biking Trail
+		Boat Access - Motorized
+		Boat Access - Non-Motorized
+		Boat Pier, Slips
+		Camper Cabin
+		Campground
+		Challenge Course
+		Child Daycare
+		Concessions
+		Defibulator
+		Disc Golf Course
+		Dog Off-Leash Area
+		Dog Park
+		Dog Trail
+		Drinking Water
+		Educational Farming
+		Electric Car Charging
+		Event Reservation
+		Festival Grounds
+		Fire Ring
+		Firewood
+		Fishing - Ice
+		Fishing Dock/Pier
+		Football Field
+		Formal Gardens
+		Garbage
+		Gazebo
+		Geocaching
+		Golf Course
+		Group Camping
+		Group Use Area
+		Habitat restoration Area
+		Hiking
+		History Exploration
+		Hockey Rink - Paved
+		Horse Trail
+		Horseshoe Court
+		Hunting
+		Ice
+		Ice Skating - Hockey
+		Ice Skating - Pleasure
+		Information Center
+		Information Kiosk
+		Inline Skating
+		Lacrosse Field
+		Lake
+		Lifeguard Service (Seasonal)
+		Little Library
+		Model Airplane Flying
+		Mountain Biking
+		Nature Area
+		Nature Education
+		Nature Observation Area
+		Nature Play Area
+		Nature Trail
+		Outdoor Exercise Equipment
+		Paddling
+		Parking
+		Pavilion
+		Pickleball Court
+		Picnic Area
+		Play Field
+		Playground
+		Pollinator Area
+		Pond
+		RV Dump Station
+		Recycling
+		Restrooms
+		Retreat Center
+		Rugby Field
+		Seasonal BMX Track
+		Senior Center
+		Shelter - Enclosed
+		Shelter - Sun
+		Skate Park
+		Ski & Snowboard Hill
+		Skijoring & Dog Sledding
+		Sliding Hill
+		Snow Making
+		Snowmobiling
+		Snowshoeing
+		Soccer Field
+		Softball Field
+		Swimming Pool
+		Team Building Area
+		Tennis Court
+		Transit Service
+		Tubing
+		Volleyball - Hard Court
+		Volleyball - Sand Court
+		Wading Pool
+		Walking Trail
+		Warming House
+		Water Play Attraction
+		WiFi
+		X-Ski Trail
+		Zipline
+
+	4. Name: AMTY_DESC (String)
+	Description:
+
+	5. Name: LONGITUDE (Double)
+	Description:
+
+	6. Name: LATITUDE (Double)
+	Description:
+
