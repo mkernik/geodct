@@ -15,6 +15,7 @@ Learning course "Building Tools with Python"
 import os
 import zipfile
 import tkinter
+import tkinter.filedialog
 
 def show_error(text): 
     tkinter.messagebox.showerror('Error', text)
