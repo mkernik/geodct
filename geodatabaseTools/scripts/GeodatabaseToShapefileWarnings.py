@@ -250,8 +250,6 @@ def NULL_values(fc):
        
     return NULL_fields
 
-fc = "C:/Users/kerni016/Desktop/ProfessionalDevelopmentLeave/data/plan_regional_parcels.gdb/ParcelsCarver"
-NULL_fields = NULL_values(fc)
 
 def unsupportedFieldTypes (fc):
     """Check for geodatabase field type options that aren't supported in 
