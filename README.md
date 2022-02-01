@@ -21,7 +21,11 @@ This repository contains a collection of python scripts and ArcGIS tools to help
 * [Python 3](https://www.python.org/) (tools built with version 3.7.11)
 
 **For tools dealing with shapefiles:**
-* Python 3 with the additional python library [gdal](https://gdal.org/) OR OSGeo4W Shell (available with download of [QGIS](www.qgis.org))
+* Python 3 with the additional python library [gdal](https://gdal.org/)
+ 
+OR
+
+* OSGeo4W Shell (available with download of [QGIS](www.qgis.org))
 
 **For tools dealing with geodatabases:**
 * ArcGIS Pro (tools built with version 2.9.0)
