@@ -35,7 +35,7 @@ The tool can process multiple file geodatabases at once. A separate text file re
 
 **Sample report**
 
-[Warning report](https://github.com/mkernik/geodct/edit/main/sampleReports/warning_report_GeodatabaseToTransform.txt)
+[Warning report](https://github.com/mkernik/geodct/blob/main/sampleReports/warning_report_GeodatabaseToTransform.txt)
 
 ### Known limitations:
 There are some additional issues when converting from geodatabase to shapefile that this script does not currently check for, including:
@@ -59,7 +59,7 @@ The tool can process multiple file geodatabases at once. (The script parameter â
 
 **Sample report**
 
-[File list](https://github.com/mkernik/geodct/edit/main/sampleReports/fileList_METRO_PARKS_TRAILS_v1_2.txt)
+[File list](https://github.com/mkernik/geodct/main/sampleReports/fileList_METRO_PARKS_TRAILS_v1_2.txt)
 
 
 ## License
