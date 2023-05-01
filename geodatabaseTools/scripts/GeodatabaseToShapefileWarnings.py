@@ -17,7 +17,7 @@ shapefile including:
 -attribute domains or subtypes
 -annotation or topology
 
-last modified: January 2022
+last modified: May 2023
 author: Melinda Kernik
 """
 
@@ -128,23 +128,32 @@ def TruncatedFields (fc):
 
     Returns
     -------
-    short_names : dictionary of field names that are longer than 10 characters 
+    trunc_names : dictionary of field names that are longer than 10 characters 
      with full field name (key): first 10 characters of field name (value)
     duplicate_names : list of field names with the same first 10 characters
     """
      
     field_names = arcpy.ListFields(fc)
-    short_names = {}
+    trunc_names = {}
+    ten_character = []
     duplicate_names = []
     for field in field_names:
         #Skip "shape_length" because it is a field that is generated for all 
         #geodatabase line and polygon feature classes. 
-        if field.name.lower() != "shape_length" and len(field.name) > 10:    
-            if field.name[:10] in short_names.values():
+        if field.name.lower() != "shape_length" and len(field.name) >= 10:    
+            #Check if shortened field name matches other shortened field names
+            if field.name[:10] in trunc_names.values():
                 if field.name [:10] not in duplicate_names:
                     duplicate_names.append(field.name[:10])
-            short_names[field.name] = (field.name[:10])
-    return short_names, duplicate_names
+            #Check if shortened field name matches existing field names
+            if field.name[:10] in ten_character:
+                if field.name [:10] not in duplicate_names:
+                    duplicate_names.append(field.name[:10])
+            if len(field.name) == 10:
+                ten_character.append(field.name)
+            else:
+                trunc_names[field.name] = (field.name[:10])
+    return trunc_names, duplicate_names
 
 
 
@@ -454,11 +463,11 @@ for gdb in arcpy.GetParameterAsText(0).split(";"):
         #Check for field names that are longer than 10 characters and for 
         #field names with the same first 10 characters
         try:
-            short_names, duplicate_names = TruncatedFields(fc)
-            if short_names: 
+            trunc_names, duplicate_names = TruncatedFields(fc)
+            if trunc_names: 
                 summary_dict["short_names"] = "Warning"
-                details = details + "\n\nWARNING: Shapefile field names cannot be longer than 10 characters. Only the first 10 characters will be used for field names that exceed this length. \n\nThere are " + str(len(short_names)) + " field names that will be truncated:\n"
-                for field in short_names:
+                details = details + "\n\nWARNING: Shapefile field names cannot be longer than 10 characters. Only the first 10 characters will be used for field names that exceed this length. \n\nThere are " + str(len(trunc_names)) + " field names that will be truncated:\n"
+                for field in trunc_names:
                     details = details + "  " + field + ",   truncated field name: " + field[:10] + "\n"
                 if duplicate_names:
                     details = details + (" \nWARNING: Multiple fields will have the same shortened name: \n")
