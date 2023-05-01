@@ -360,6 +360,11 @@ def FeaturesExist (feature_classes):
 ###Get path to geodatabase or multiple geodatabases
 for gdb in arcpy.GetParameterAsText(0).split(";"):
     
+    #Set up a counter for number of features checked, number of warnings found, and a warning summary list
+    count = 0
+    warning_count = 0 
+    warning_list = []
+    
     arcpy.AddMessage("Processing:" + gdb)
     geodatabase = gdb
 
@@ -421,8 +426,12 @@ for gdb in arcpy.GetParameterAsText(0).split(";"):
                 f.write("  " + str(v) + " raster(s)\n")
             elif k == "Topology":
                 f.write("  " + str(v) + " topology layer(s) **WARNING: Functionality is lost when converting topology layers into shapefiles**\n")
+                warning_count +=1
+                warning_list.append("Topology")
             elif k == "Annotation":
                 f.write("  " + str(v) + " annotation layer(s) **WARNING: Functionality is lost when converting annotation layers into shapefiles**\n")
+                warning_count +=1
+                warning_list.append("Annotation")
             else:
                 f.write("  " + str(v) + " " + k + " layer(s)\n" )
     
@@ -441,8 +450,10 @@ for gdb in arcpy.GetParameterAsText(0).split(";"):
     #the issue and affected fields to the end of the "details" string. Once all
     #potential issues have been checked, write the summary and details (if any) to
     #a text file report.
-
+    
     for name, fc in feature_classes.items():
+        warning = False
+        count += 1
         summary_dict = {}
         summary_dict ["name"] = name
         details = "\n\nMore detailed description of warnings:\n"
@@ -451,6 +462,8 @@ for gdb in arcpy.GetParameterAsText(0).split(";"):
         #Check that the number of fields in the feature class does not exceed 255
         if field_dict[fc]:
             if len(field_dict[fc]) > 255:
+                warning = True
+                warning_list.append("Number of fields")
                 summary_dict["field_number"] = "Warning"
                 details = details + "\n\nWARNING: The maximum number of fields a shapefiles can have is 255. If this limit is exceeded only the first 255 fields will be used. There are " + str(len(field_dict[fc])) + " fields.\n"
             else:
@@ -465,11 +478,14 @@ for gdb in arcpy.GetParameterAsText(0).split(";"):
         try:
             trunc_names, duplicate_names = TruncatedFields(fc)
             if trunc_names: 
+                warning = True
+                warning_list.append("Field name character length")
                 summary_dict["short_names"] = "Warning"
                 details = details + "\n\nWARNING: Shapefile field names cannot be longer than 10 characters. Only the first 10 characters will be used for field names that exceed this length. \n\nThere are " + str(len(trunc_names)) + " field names that will be truncated:\n"
                 for field in trunc_names:
                     details = details + "  " + field + ",   truncated field name: " + field[:10] + "\n"
                 if duplicate_names:
+                    warning_list.append("Multiple fields with the same shortened name")
                     details = details + (" \nWARNING: Multiple fields will have the same shortened name: \n")
                     for field in duplicate_names:
                         details = details + "  " + field +"\n"
@@ -484,6 +500,8 @@ for gdb in arcpy.GetParameterAsText(0).split(";"):
         try:
             string_fields, long_fields_dict = StringFieldLength(fc)             
             if long_fields_dict: 
+                warnings = True
+                warning_list.append("String field length")
                 summary_dict["long_fields"] = "Warning"
                 details = details + "\n\nWARNING: Shapefile text/string fields are limited to 254 characters. Only the first 254 characters will be use for text fields that exceed this length. \n\nThere are " + str(len(long_fields_dict)) + " fields in which data will be lost:\n"
                 for key, value in long_fields_dict.items():
@@ -502,6 +520,8 @@ for gdb in arcpy.GetParameterAsText(0).split(";"):
         try:
             date_fields = DateFieldLength(fc)           
             if date_fields:
+                warnings = True
+                warning_list.append("Date fields with time")
                 summary_dict["date_fields"] = "Warning"
                 details = details + "\n\nWARNING: Shapefile date fields can hold only dates (MM/DD/YYYY), not time (H:M:S).\n\nData will be lost in " + str(len(date_fields)) + " field(s):\n"
                 for key, value in date_fields.items():
@@ -518,6 +538,8 @@ for gdb in arcpy.GetParameterAsText(0).split(";"):
         try:
             NULL_fields = NULL_values(fc)
             if NULL_fields: 
+                warnings = True
+                warning_list.append("Null values")
                 summary_dict["null_values"] = "Warning"
                 details = details + "\n\nWARNING: Null values are not supported in shapefiles. They will be converted to other values depending on the field type (string -->'', dates --> '0', etc). \n\nThere are NULL values in " + str(len(NULL_fields)) + " field(s):\n"
                 for k,v in NULL_fields.items():
@@ -532,6 +554,8 @@ for gdb in arcpy.GetParameterAsText(0).split(";"):
         try:
             unsupported_fields = unsupportedFieldTypes (fc)
             if unsupported_fields:
+                warnings = True
+                warning_list.append("Unsupported field types")
                 summary_dict["unsupported_fields"] = "Warning"
                 unsupported_types = {"Blob": " BLOB field(s) - BLOB fields will be removed if the feature class is converted to shapefile:\n", 
                                      "Raster": " raster field - The field will be removed if the feature class is converted to shapefile:\n",
@@ -558,6 +582,8 @@ for gdb in arcpy.GetParameterAsText(0).split(";"):
         try:
             domain_fields = AttributeDomains(fc)
             if domain_fields: 
+                warnings = True
+                warning_list.append("Attribute domains")
                 summary_dict["attribute_domain"] = "Warning"
                 details = details + "\n\nWARNING: Attribute domains are not supported in shapefiles.\n\nThere are " + str(len(domain_fields)) + " fields with attribute domains:\n"
                 for key, value in domain_fields.items():
@@ -573,6 +599,8 @@ for gdb in arcpy.GetParameterAsText(0).split(";"):
         try:
             subtype_fields = SubtypeFields(fc)
             if subtype_fields: 
+                warnings = True
+                warning_list.append("Subtypes")
                 summary_dict["subtype_fields"] = "Warning"
                 details = details + "\n\nWARNING: Subtypes are not supported in shapefiles.\n\n"+ str(len(subtype_fields)) + " field(s) has subtypes:\n"
                 for subtype in subtype_fields:
@@ -586,21 +614,31 @@ for gdb in arcpy.GetParameterAsText(0).split(";"):
             
         #Write a summary of the warnings about the feature class 
         #Potential issue = "Warning"; No issue found = "Ok"; Unable to run the function = "Not determined."
-        report_template = Template("-------------------------------\nSummary of warnings for ${name}:\n-------------------------------\n  Number of fields: ${field_number}\n  Field name character length: ${short_names}\n  String field length: ${long_fields}\n  Date fields with time: ${date_fields}\n  NULL values: ${null_values}\n  Unsupported field types: ${unsupported_fields}\n  Attribute domains: ${attribute_domain}\n  Subtypes: ${subtype_fields}")
-        summary = report_template.substitute(summary_dict)    
-        f.write(summary)
-        f.write("\n")
+        if warning == True:
+            warning_count += 1
+            report_template = Template("-------------------------------\nSummary of warnings for ${name}:\n-------------------------------\n  Number of fields: ${field_number}\n  Field name character length: ${short_names}\n  String field length: ${long_fields}\n  Date fields with time: ${date_fields}\n  NULL values: ${null_values}\n  Unsupported field types: ${unsupported_fields}\n  Attribute domains: ${attribute_domain}\n  Subtypes: ${subtype_fields}")
+            summary = report_template.substitute(summary_dict)    
+            f.write(summary)
+            f.write("\n")
     
  
-        #If any of the issues in the summary dictionary have a warning, write the 
-        #details string to the report. 
-        try:
-            if any([True for k,v in summary_dict.items() if v == "Warning"]):
-                f.write(details) 
-        except Exception as e:
-            arcpy.AddMessage  ("Could not write details for " + name + " to the report. There may be unicode characters in the field names. (" + str(e) + ")")
-            f.write("\nCould not write more detailed warnings to the report. Check the tool results window for errors.")
-        f.write("\n\n\n")    
+            #If any of the issues in the summary dictionary have a warning, write the 
+            #details string to the report. 
+            try:
+                if any([True for k,v in summary_dict.items() if v == "Warning"]):
+                    f.write(details) 
+            except Exception as e:
+                arcpy.AddMessage  ("Could not write details for " + name + " to the report. There may be unicode characters in the field names. (" + str(e) + ")")
+                f.write("\nCould not write more detailed warnings to the report. Check the tool results window for errors.")
+            f.write("\n\n\n")
+    
+    #Write a summary of warnings for the geodatabase as a whole
+    f.write("**********************************************\nSummary\n\nTotal feature classes checked: " + str(count) + "\nFeature classes with warnings: " + str(warning_count) + "\n\n")
+    if warning_list:
+        c = Counter(warning_list)
+        for value, count in c.most_common():
+            f.write(value + " : " + str(count) +"\n")
+    f.write("\n\n")
     f.close()
 
 arcpy.AddMessage("Script complete!")
