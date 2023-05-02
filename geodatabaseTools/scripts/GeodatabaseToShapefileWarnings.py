@@ -106,6 +106,19 @@ def FieldList(feature_classes):
     return field_dict
 
 
+def get_size(start_path = '.'):
+    """"Calculate total size of all files in a directory, including sub-directories."""
+    
+    total_size = 0
+    for dirpath, dirnames, filenames in os.walk(start_path):
+        for f in filenames:
+            fp = os.path.join(dirpath, f)
+            # skip if it is symbolic link
+            if not os.path.islink(fp):
+                total_size += os.path.getsize(fp)
+    return total_size
+
+
 def convert_size(size_bytes):
     """Convert file size in bytes to a more human readable format"""
 
@@ -437,10 +450,13 @@ for gdb in arcpy.GetParameterAsText(0).split(";"):
     
 
     #Check the file size of the geodatabase and report it in a human-readable format. Add a warning if it is larger than 2GB.
-    if os.path.getsize(geodatabase) > 2147483648:
-        f.write("\nWARNING: There is a 2GB size limit for any shapefile component file. The overall file size of the geodatabase is " + convert_size(os.path.getsize(geodatabase)) + ". Check to see whether any of the components within the geodatabase exceed 2GB before transforming or data will be lost!")
+    gdb_size = get_size(geodatabase)
+    if gdb_size > 2147483648:
+        f.write("\nWARNING: There is a 2GB size limit for any shapefile component file. The overall file size of the geodatabase is " + convert_size(gdb_size) + ". Check to see whether any of the components within the geodatabase exceed 2GB before transforming or data will be lost!")
+        warning_count +=1
+        warning_list.append("Overall file size")
     else:
-        f.write("\nThe file size of the geodatabase is " + convert_size(os.path.getsize(geodatabase)) + ".\n")
+        f.write("\nThe file size of the geodatabase is " + convert_size(gdb_size) + ".\n")
 
     f.write("\n ********************************************** \n\n\n")
     
