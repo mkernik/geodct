@@ -643,7 +643,7 @@ for gdb in arcpy.GetParameterAsText(0).split(";"):
         #Potential issue = "Warning"; No issue found = "Ok"; Unable to run the function = "Not determined."
         if warning == True:
             warning_count += 1
-            report_template = Template("-------------------------------\nSummary of warnings for ${name}:\n-------------------------------\n  Number of fields: ${field_number}\n  Field name character length: ${short_names}\n  String field length: ${long_fields}\n  Date fields with time: ${date_fields}\n  NULL values: ${null_values}\n  Unsupported field types: ${unsupported_fields}\n  Attribute domains: ${attribute_domain}\n  Subtypes: ${subtype_fields}\n)
+            report_template = Template("-------------------------------\nSummary of warnings for ${name}:\n-------------------------------\n  Number of fields: ${field_number}\n  Field name character length: ${short_names}\n  String field length: ${long_fields}\n  Date fields with time: ${date_fields}\n  NULL values: ${null_values}\n  Unsupported field types: ${unsupported_fields}\n  Attribute domains: ${attribute_domain}\n  Subtypes: ${subtype_fields}\n")
             summary = report_template.substitute(summary_dict)    
             f.write(summary)
             f.write("\n")
