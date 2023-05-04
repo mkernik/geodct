@@ -29,6 +29,7 @@ try:
     from string import Template
     from collections import Counter, OrderedDict
     from pathlib import Path
+    from datetime import datetime
 except Exception as e:
     arcpy.AddMessage(str(e))
 
@@ -418,6 +419,7 @@ for gdb in arcpy.GetParameterAsText(0).split(";"):
     
     #Open a text file in which to write the warning report and add a header
     f = open(report_path,"w") 
+    f.write ("This report was generated for " + Path(geodatabase).stem + ".gdb on "+ str(datetime.now().strftime("%Y-%m-%d")) + "\n\n")
     f.write("**********************************************\n\nThe geodatabase includes the following feature classes:\n")
 
     #Write a list of the feature classes in the geodatabase.  If a feature class has no fields (is empty or corrupt), note that and remove it from the list of feature classes
