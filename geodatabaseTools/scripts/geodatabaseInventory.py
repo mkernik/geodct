@@ -265,8 +265,7 @@ for gdb in arcpy.GetParameterAsText(0).split(";"):
     #Open a text file in which to write the file inventory and add a header
     fileList_path = os.path.dirname(geodatabase) + "/fileList_" + Path(geodatabase).stem + ".txt"
     f = open(fileList_path ,'w') 
-    f.write ("File: " + geodatabase + "\nDate: "+ datetime.now().strftime("%Y-%m-%dT%H:%M:%S") + "\n\n")
-
+    f.write ("This report was generated for " + Path(geodatabase).stem + ".gdb on "+ str(datetime.now().strftime("%Y-%m-%d")) + "\n\n")
 
     #Write a summary of the data types present in the geodatabse
     f.write ("********************************************\nSummary\n" + "********************************************\n\n")
