@@ -442,12 +442,8 @@ for gdb in arcpy.GetParameterAsText(0).split(";"):
                 f.write("  " + str(v) + " raster(s)\n")
             elif k == "Topology":
                 f.write("  " + str(v) + " topology layer(s) **WARNING: Functionality is lost when converting topology layers into shapefiles**\n")
-                warning_count +=1
-                warning_list.append("Topology")
             elif k == "Annotation":
                 f.write("  " + str(v) + " annotation layer(s) **WARNING: Functionality is lost when converting annotation layers into shapefiles**\n")
-                warning_count +=1
-                warning_list.append("Annotation")
             else:
                 f.write("  " + str(v) + " " + k + " layer(s)\n" )
     
@@ -456,7 +452,6 @@ for gdb in arcpy.GetParameterAsText(0).split(";"):
     gdb_size = get_size(geodatabase)
     if gdb_size > 2147483648:
         f.write("\nWARNING: There is a 2GB size limit for any shapefile component file. The overall file size of the geodatabase is " + convert_size(gdb_size) + ". Check to see whether any of the components within the geodatabase exceed 2GB before transforming or data will be lost!")
-        warning_count +=1
         warning_list.append("Overall file size")
     else:
         f.write("\nThe file size of the geodatabase is " + convert_size(gdb_size) + ".\n")
