@@ -1,16 +1,18 @@
+This report was generated for GeodatabaseToTransform.gdb on 2023-05-04
+
 **********************************************
 
 The geodatabase includes the following feature classes:
-  dnr_public_facilities_polygons  
-  FeatureDatasetTest/MNDNR_FOR_SEEDZONES
+  dnr_public_facilities_polygons
   FeatureDatasetTest/eda_surfacewater_stations
+  FeatureDatasetTest/MNDNR_FOR_SEEDZONES
   SubtypeTest
-  
+
 It also contains 2 other data layers, including: 
   1 annotation layer(s) **WARNING: Functionality is lost when converting annotation layers into shapefiles**
   1 raster(s)
 
-The file size of the geodatabase is 64.0 KB.
+The file size of the geodatabase is 26.44 MB.
 
  ********************************************** 
 
@@ -29,7 +31,6 @@ Summary of warnings for dnr_public_facilities_polygons:
 
 
 More detailed description of warnings:
-
 
 WARNING: Shapefile field names cannot be longer than 10 characters. Only the first 10 characters will be used for field names that exceed this length. 
 
@@ -109,32 +110,6 @@ There are 3 fields with attribute domains:
   Field name: web_ready   Domain: BooleanSymbolValue
 
 
--------------------------------
-Summary of warnings for FeatureDatasetTest/MNDNR_FOR_SEEDZONES:
--------------------------------
-  Number of fields: Ok
-  Field name character length: Warning
-  String field length: Ok
-  Date fields with time: Ok
-  NULL values: Ok
-  Unsupported field types: Ok
-  Attribute domains: Ok
-  Subtypes: Ok
-
-
-More detailed description of warnings:
-
-
-WARNING: Shapefile field names cannot be longer than 10 characters. Only the first 10 characters will be used for field names that exceed this length. 
-
-There are 2 field names that will be truncated:
-  SEED_ZONE_ID,   truncated field name: SEED_ZONE_
-  SEED_ZONE_NAME,   truncated field name: SEED_ZONE_
- 
-WARNING: Multiple fields will have the same shortened name: 
-  SEED_ZONE_
-
-
 
 -------------------------------
 Summary of warnings for FeatureDatasetTest/eda_surfacewater_stations:
@@ -150,7 +125,6 @@ Summary of warnings for FeatureDatasetTest/eda_surfacewater_stations:
 
 
 More detailed description of warnings:
-
 
 WARNING: Shapefile field names cannot be longer than 10 characters. Only the first 10 characters will be used for field names that exceed this length. 
 
@@ -185,6 +159,33 @@ Data will be lost in 1 field(s):
   date_test (4 rows)
 
 
+
+-------------------------------
+Summary of warnings for FeatureDatasetTest/MNDNR_FOR_SEEDZONES:
+-------------------------------
+  Number of fields: Ok
+  Field name character length: Warning
+  String field length: Ok
+  Date fields with time: Ok
+  NULL values: Ok
+  Unsupported field types: Ok
+  Attribute domains: Ok
+  Subtypes: Ok
+
+
+More detailed description of warnings:
+
+WARNING: Shapefile field names cannot be longer than 10 characters. Only the first 10 characters will be used for field names that exceed this length. 
+
+There are 2 field names that will be truncated:
+  SEED_ZONE_ID,   truncated field name: SEED_ZONE_
+  SEED_ZONE_NAME,   truncated field name: SEED_ZONE_
+ 
+WARNING: Multiple fields will have the same shortened name: 
+  SEED_ZONE_
+
+
+
 -------------------------------
 Summary of warnings for SubtypeTest:
 -------------------------------
@@ -200,7 +201,6 @@ Summary of warnings for SubtypeTest:
 
 More detailed description of warnings:
 
-
 WARNING Shapefiles do not support blob, guid, global ID, or raster field types.
 
 5 field(s) will be impacted:
@@ -208,6 +208,9 @@ WARNING Shapefiles do not support blob, guid, global ID, or raster field types.
   BlobFun
 1 raster field - The field will be removed if the feature class is converted to shapefile:
   RasterFun
+2 guid field(s) - These fields will be converted to text and lose functionality:
+  Guid1
+  Guid2
 1 global id field -The field will be converted to text and lose functionality:
   GlobalID
 
@@ -216,4 +219,25 @@ WARNING: Subtypes are not supported in shapefiles.
 
 1 field(s) has subtypes:
   Field name: Subtype
+
+
+
+**********************************************
+Summary
+
+Total feature classes checked: 4
+Feature classes with warnings: 4
+
+Warnings Found
+Field name character length : 3
+Multiple fields with the same shortened name : 3
+Date fields with time : 2
+Unsupported field types : 2
+Null values : 1
+Attribute domains : 1
+String field length : 1
+Subtypes : 1
+
+
+**********************************************
 
