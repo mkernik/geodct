@@ -29,7 +29,7 @@ This ArcGIS script tool examines feature classes in input file geodatabases for 
 * attribute domains or subtypes  
 * annotation or topology    
 
-The results of this inspection are written to a text file ("warning_report_[geodatabase_name]") in the directory where the geodatabase is located.  A section at the top provides a list of feature classes and information about the geodatabase as a whole.  Each valid feature class has a section in the following report with a summary of possible warnings and then details about any issues found.
+The results of this inspection are written to a text file ("warning_report_[geodatabase_name]") in the directory where the geodatabase is located.  A section at the top provides a list of feature classes and information about the geodatabase as a whole. The following report has a section for each valid feature classes that returned a warning, with a summary of possible warnings and then more details about issues found.
 
 The tool can process multiple file geodatabases at once. A separate text file report will be created for each geodatabase.
 
